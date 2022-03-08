@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Theme Section */
+#themeToggle{
+  margin: 7px 20px;
+  margin-left: 5px;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  border: 0.5px solid #9ebedb;
+  width: 42px;
+  height: 21px;
+  background-color: white;
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 18px;
+  height: 17px;
+  background-color: #707070;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+  transform: translateX(18px);
+}
+
+.bi-moon-fill {
+  color: black;
+  font-size: 14px;
+}
+
+.bi-brightness-high-fill {
+  color: #ff9900;;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 991px) {
+  .label {
+    transform: scale(1.25);
+  }
+}
+
+.bg-darkBlue{
+  background-color: #1e2b4a;
+}
+.lightMain{
+  background-color: none;
+}
+.darkMain{
+  background-color: #151a33;
+}
+
+
+/* container style */
+.lightContainerStyle{
+  background-color: white;
+  color: black;
+}
+.darkContainerStyle{
+  background-color: #1a253f;
+  color: white;
+}
+
+
+/* Alert message */
+.showMessage {
+  display: block;
+}
+.closeMessage{
+  display: none;
+}
+
+
+/* Accordion */
+.lightAI{
+  background-color: white;
+}
+.lightAC{
+  color: black;
+}
+.darkAI{
+  background-color: #16163c;
+}
+.darkAC{
+  color: white;
+}
